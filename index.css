@@ -41,7 +41,6 @@ main{
 
 .sign-up-form__input-label{
 
-    width: 190px;
     font-weight: bold;
 
 }
@@ -113,6 +112,12 @@ input[type="text"], input[type="tel"], input[type="email"], input[type="password
         margin-left: -18px;
         flex-wrap: nowrap;
 
+    }
+
+    .sign-up-form__input-label{
+
+        width: 190px;
+    
     }
     
   }
