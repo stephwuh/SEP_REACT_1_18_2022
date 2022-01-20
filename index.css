@@ -10,30 +10,29 @@ h1{
 
 main{
     margin: 30px auto;
-    width: 500px;
+    width: 100vw;
 }
 
 
 .sign-up-form__input-container{
     display: flex;
-    /* justify-content: space-between; */
-    column-gap: 20px;
+    flex-direction: column;
+    /* column-gap: 20px; */
 }
 
-.sign-up-form__input_sm, .sign-up-form__input-container button{
-    width: 50%
-}
 
-.sign-up-form__input_lg{
+
+
+.sign-up-form__input_lg, .sign-up-form__input_sm, .sign-up-form__input-container button{
     width: 100%;
 }
 
 .sign-up-form__terms-and-agreement-container{
     display: flex;
     align-items: center;
-    margin-left: -18px;
-    justify-content: space-between;
-    
+    justify-content:start;
+    flex-wrap: wrap;
+
 }
 
 .sign-up-form__input-checkbox{
@@ -53,7 +52,7 @@ main{
 }
 
 
-#agree #terms{
+.sign-up-form__text_light-blue{
     color: #B1CFE9;
 }
 
@@ -63,11 +62,18 @@ input, button{
     height: 2.5rem;
     margin: 5px 0;
     border-radius: 5px;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     font-size: 1rem;
 }
 
-input[type="text"], input[type="number"], input[type="email"], input[type="password"]{
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    outline: none;
+    border: 1px solid #428BCA;
+    box-shadow: 0 0 3px #428BCA;
+
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"]{
     padding-left: 7px;
     /* text-indent: 50px; */
 }
@@ -84,3 +90,29 @@ input[type="text"], input[type="number"], input[type="email"], input[type="passw
     background-color: #5CB85C;
     color: white;
 }
+
+
+@media only screen and (min-width: 501px) {   
+    
+    main{
+     
+        width: 500px;
+    }
+
+    .sign-up-form__input-container{
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .sign-up-form__terms-and-agreement-container{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        height: 3vh;
+        margin-left: -18px;
+        flex-wrap: nowrap;
+
+    }
+    
+  }
