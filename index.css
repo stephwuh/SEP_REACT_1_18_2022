@@ -65,7 +65,6 @@ input, button{
     border-radius: 5px;
     border: 1px solid grey;
     font-size: 1rem;
-    /* font-weight: bold; */
 }
 
 input[type="text"], input[type="number"], input[type="email"], input[type="password"]{
@@ -81,7 +80,7 @@ input[type="text"], input[type="number"], input[type="email"], input[type="passw
     border-radius: 5px;
 }
 
-button{
+.sign-up-form__button_green{
     background-color: #5CB85C;
     color: white;
 }
