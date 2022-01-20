@@ -8,49 +8,69 @@
     <title>Sign Up</title>
   </head>
   <body>
-    <div id="sign-up-container">
+    <main>
       <h1>Sign Up</h1>
-      <form>
-        <div class="input2">
-          <input type="text" placeholder="First Name" name="fname" />
-          <input type="text" placeholder="Last Name" name="lname" />
+      <form class="sign-up-form">
+        <div class="sign-up-form__input-container">
+          <input
+            class="sign-up-form__input_sm"
+            type="text"
+            placeholder="First Name"
+            name="fname"
+          />
+          <input
+            class="sign-up-form__input_sm"
+            type="text"
+            placeholder="Last Name"
+            name="lname"
+          />
         </div>
         <input
-          class="input1"
+          class="sign-up-form__input_lg"
           type="number"
           placeholder="Mobile No."
           name="mobilenum"
         />
         <input
-          class="input1"
+          class="sign-up-form__input_lg"
           type="email"
           placeholder="Email Address"
           name="email"
         />
-        <div class="input2">
-          <input type="password" placeholder="Password" name="password" />
+        <div class="sign-up-form__input-container">
           <input
+            class="sign-up-form__input_sm"
+            type="password"
+            placeholder="Password"
+            name="password"
+          />
+          <input
+            class="sign-up-form__input_sm"
             type="password"
             placeholder="Confirm Password"
             name="cpassword"
           />
         </div>
-        <div id="agree">
-          <div id="checkbox">
-            <input type="checkbox" id="agree" name="agree" />
-            <label for="agree">I Agree</label>
-          </div>
-          <p>
-            By clicking <span class="register">Register</span>, you agree to the
+        <div class="sign-up-form__terms-and-agreement-container">
+          
+            <input class="sign-up-form__input-checkbox" type="checkbox" id="agree" name="agree" />
+            <label class="sign-up-form__input-label" for="agree">I Agree</label>
+          
+          <p class="sign-up-form__text">
+            By clicking <span class="sign-up-form__text_button-like">Register</span>, you agree to the
             <span id="terms"> Terms and Conditions</span> set out by this site,
             including our Cookie Use.
           </p>
         </div>
-        <div class="input2">
-          <input class="register" type="submit" value="Register" />
+        <div class="sign-up-form__input-container">
+          <input
+            class="sign-up-form__input_sm sign-up-form__input_blue"
+            type="submit"
+            value="Register"
+          />
           <button>Sign In</button>
         </div>
       </form>
-    </div>
+    </main>
   </body>
 </html>

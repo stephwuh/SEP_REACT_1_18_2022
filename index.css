@@ -8,49 +8,56 @@ h1{
     text-align: center;
 }
 
-#sign-up-container{
+main{
     margin: 30px auto;
     width: 500px;
 }
 
 
-.input2{
+.sign-up-form__input-container{
     display: flex;
     /* justify-content: space-between; */
     column-gap: 20px;
 }
 
-.input2 input, .input2 button{
+.sign-up-form__input_sm, .sign-up-form__input-container button{
     width: 50%
 }
 
-.input1{
+.sign-up-form__input_lg{
     width: 100%;
 }
 
-#agree{
+.sign-up-form__terms-and-agreement-container{
     display: flex;
     align-items: center;
+    margin-left: -18px;
+    justify-content: space-between;
+    
 }
+
+.sign-up-form__input-checkbox{
+    margin-right: 5px;
+}
+
+.sign-up-form__input-label{
+
+    width: 190px;
+    font-weight: bold;
+
+}
+
+.sign-up-form__text{
+    text-align:justify;
+    font-size: 0.9rem;
+}
+
 
 #agree #terms{
     color: #B1CFE9;
 }
 
-#checkbox{
-    width: 20%;
-    display:flex;
-    align-items: center;
-}
 
-#checkbox label{
-   margin-left: 5px;
-}
-
-#agree p{
-    width: 80%;
-    font-size: 0.9rem;
-}
 
 input, button{
     height: 2.5rem;
@@ -67,7 +74,7 @@ input[type="text"], input[type="number"], input[type="email"], input[type="passw
 }
 
 
-.register{
+.sign-up-form__input_blue{
     background-color: #428BCA;
     color: white;
     padding: 0.2rem 0.5rem;
