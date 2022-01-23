@@ -1,0 +1,43 @@
+@import './header/header.css';
+@import './footer/footer.css';
+@import './blogPost/blogPost.css';
+@import './homepage/homepage.css';
+
+:root{
+    --page-width-lg: 710px;
+    --color-primary:#FAFAFA;
+    --border-color: lightgray;
+    --button-color-primary: #4285F4;
+}
+	
+/* universal selector doesnt affect pseudo elements
+you do this to apply them to pseudo elements */
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:visited {
+    color:inherit
+}
+
+
+
+.page-grid-container{
+    display:grid;
+
+    grid-template-rows: 70px 1fr 70px;
+
+    min-height: 100vh;
+
+
+}
+

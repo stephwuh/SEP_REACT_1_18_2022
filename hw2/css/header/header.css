@@ -1,0 +1,73 @@
+@import '.././index.css';
+
+
+
+header{
+    background-color: var(--color-primary);
+    border-bottom: 1px solid var(--border-color);
+    /* height: 5rem; */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 7px;
+    margin-right: 7px;
+    
+
+}
+
+.header__title_white{
+    color: #333;
+}
+
+.header__home-link:link{
+    color: black;
+}
+
+.header__home-link i{
+    font-size: 2rem;
+}
+
+.header__search{
+    display:none;
+}
+
+
+
+@media only screen and (min-width: 710px ) {
+
+    .header{
+        width: var(--page-width-lg);
+        margin: 0 auto;
+    }
+
+    .header__search-container{
+        display: flex;
+        border: 1px solid var(--border-color);
+        border-radius: 7px;
+        overflow: hidden;
+    }
+    
+    
+    
+    .header__search-container i{
+        margin: 4px 5px 0 5px;
+    }
+    
+    .header__search{
+        display: initial;
+        border-style: none;
+        height: 1.5rem;
+        background-color: inherit;
+    
+    }
+    
+    .header__search:focus{
+        outline: none;
+    }
+    .header__home-link, .header__search{
+        width: 150px;
+    }
+}

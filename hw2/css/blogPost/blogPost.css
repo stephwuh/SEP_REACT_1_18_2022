@@ -1,0 +1,145 @@
+@import '.././index.css';
+
+:root{
+    --side-bar-border: 1px solid rgb(240, 240, 240);
+    
+}
+
+.blog-post-grid-container{
+
+    display: grid;
+
+    grid-template: repeat(3, 1fr), 3rem / repeat(12, 1fr);
+    /* width: var(--page-width-lg); */
+
+    margin-top: 20px;
+
+    /* gap: 20px 20px; */
+
+}
+
+.blog-post{
+    grid-area: 1 / 1 / span 3 / span 12;
+    margin-left: 20px;
+    margin-right: 20px;
+ 
+}
+
+.avatar-container{
+    display: flex;
+     align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.avatar{
+    grid-area: 1 / 9 / span 2 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.blog-post-name-date{
+    margin-left: 10px;
+}
+
+.avatar-image{
+
+        width: 35px;
+        height: auto;
+        border-radius: 50%;
+
+}
+
+.line{
+    height:1px; 
+    border-width:0; 
+    background-color:var(--border-color);
+    margin-bottom: 1rem;
+}
+
+.blog-post-link-container{
+    display: none;
+}
+
+.blog-post__text-paragraph{
+    text-indent: 30px;
+    margin-bottom: 1rem;
+}
+
+
+.side-bar__title, .blog-post-link, .social-media-link-container{
+    margin: 15px 0 15px 25px;
+    /* text-align: center; */
+}
+
+
+
+.social-media-container{
+
+    border: var(--side-bar-border);
+    grid-area: 4 / 1 / span 1 / span 12;
+    background-color: var(--color-primary);
+    /* height: 60%;
+    align-self: flex-end; */
+}
+
+
+
+.social-media-link{
+    margin: 0 3px;
+}
+
+.social-media-icon{
+    font-size: 30px;
+}
+
+.mail-icon{
+    color: gray;
+}
+
+@media only screen and (min-width: 710px ) {
+
+    .blog-post-grid-container{
+
+
+    
+        grid-template: repeat(4, 1fr) / repeat(12, 1fr);
+        width: var(--page-width-lg);
+
+        row-gap: 10px;
+
+        margin: 20px auto;
+
+    
+
+    }
+
+    .blog-post{
+        grid-area: 1 / 1 / span 4 / span 7;
+     
+    }
+
+    .blog-post-link-container{
+
+        display: flex;
+
+        border: var(--side-bar-border);
+
+        flex-direction: column;
+
+  
+        grid-area: 1 / 9 / span 2 / span 4;
+
+        background-color: var(--color-primary);
+        
+    }
+
+    .social-media-container{
+
+        grid-area: 3 / 9 / span 1 / span 4;
+
+        height: 70%;
+  
+    }
+}
