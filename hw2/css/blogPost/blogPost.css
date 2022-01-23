@@ -22,7 +22,6 @@
     grid-area: 1 / 1 / span 3 / span 12;
     margin-left: 20px;
     margin-right: 20px;
- 
 }
 
 .avatar-container{
@@ -44,11 +43,9 @@
 }
 
 .avatar-image{
-
         width: 35px;
         height: auto;
         border-radius: 50%;
-
 }
 
 .line{
@@ -69,6 +66,10 @@
 
 figure{
     margin-bottom: 1rem;
+}
+
+figcaption > q{
+    quotes: "<<" ">>";
 }
 
 .blog-post__text-paragraph{
