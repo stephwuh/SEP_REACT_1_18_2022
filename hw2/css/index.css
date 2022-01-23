@@ -20,6 +20,14 @@ you do this to apply them to pseudo elements */
     box-sizing: border-box;
 }
 
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Libre Baskerville', serif;
+}
+p{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
 a{
     cursor: pointer;
     text-decoration: none;
@@ -29,7 +37,10 @@ a:visited {
     color:inherit
 }
 
-
+a:hover {
+    color:blue;
+    text-decoration: underline;
+}
 
 .page-grid-container{
     display:grid;

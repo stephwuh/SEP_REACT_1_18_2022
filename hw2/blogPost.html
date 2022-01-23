@@ -15,13 +15,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Myeongjo&display=swap"
+      rel="stylesheet"
+    />
     <title>Blog Post</title>
   </head>
   <body>
     <div class="page-grid-container">
       <header>
         <nav class="header">
-          <a class="header__home-link" href="./homepage.html"><i class="fas fa-home"></i></a>
+          <a class="header__home-link" href="./homepage.html"
+            ><i class="fas fa-home"></i
+          ></a>
           <h1 class="header__title_white">Stephen's Blog</h1>
           <form>
             <div class="header__search-container">
@@ -41,11 +49,20 @@
             <img src="images/avatar.jpg" alt="avatar" class="avatar-image" />
             <div class="blog-post-name-date">
               <p>Stephen Wuh</p>
+              <p>University of Michigan</p>
               <p>2022.1.24</p>
             </div>
           </div>
           <hr class="line" />
-          <p class="blog-post__text-paragraph">
+          <figure>
+            <img
+              class="blog-post-image"
+              src="https://source.unsplash.com/random/1250x900"
+              alt="random image"
+            />
+            <figcaption>&ltSome Random Image&gt</figcaption>
+          </figure>
+          <p class="blog-post__text-paragraph paragraph-1">
             I am a full-stack web developer who wants to build web applications
             that make life better for everyone.
           </p>
@@ -56,8 +73,13 @@
             programming language (JavaScript), but I realized I had a genuine
             passion for building software when I found myself engrossed in the
             process of envisioning a product, building it, and seeing it work
-            before my very own eyes! Creating something that does something cool
-            is truly very satisfying and empowering.
+            before my very own eyes!
+            <em
+              ><u
+                >Creating something that does something cool is truly very
+                satisfying and empowering.</u
+              ></em
+            >
           </p>
           <p class="blog-post__text-paragraph">
             However, I also realize that with all the benefits of technology
@@ -105,10 +127,7 @@
               href="https://www.linkedin.com/in/stephenwuh/"
               target="_blank"
             >
-              <i
-                class="devicon-linkedin-plain colored social-media-icon"
-                
-              ></i>
+              <i class="devicon-linkedin-plain colored social-media-icon"></i>
             </a>
 
             <a
@@ -116,17 +135,11 @@
               href="https://www.facebook.com/pseudonym87/"
               target="_blank"
             >
-              <i
-                class="devicon-facebook-plain colored social-media-icon"
-             
-              ></i>
+              <i class="devicon-facebook-plain colored social-media-icon"></i>
             </a>
 
             <a class="social-media-link" href="mailto:stephwuh@gmail.com">
-              <i
-                class="fas fa-envelope-square social-media-icon mail-icon"
-               
-              ></i>
+              <i class="fas fa-envelope-square social-media-icon mail-icon"></i>
             </a>
           </div>
         </section>
