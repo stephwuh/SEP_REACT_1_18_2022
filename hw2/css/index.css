@@ -2,6 +2,9 @@
 @import './footer/footer.css';
 @import './blogPost/blogPost.css';
 @import './homepage/homepage.css';
+@import './archives/archives.css';
+@import './social-media/social-media.css';
+
 
 :root{
     --page-width-lg: 710px;
